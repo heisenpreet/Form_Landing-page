@@ -1,0 +1,147 @@
+.webinar {
+  height: 100vh;
+  width: 100vw;
+  background-color: $gunmetal;
+
+  padding: 3rem;
+  position: relative;
+
+  &__box-1 {
+    @include absolute-center;
+    box-shadow: $black-shadow-normal;
+    background-color: $black-dark;
+    width: 78%;
+    height: 50rem;
+    overflow: hidden;
+    @include respond(tab-land) {
+    }
+    @include respond(tab-port) {
+    }
+    @include respond(phone) {
+      height: 95vh;
+      width: 95vw;
+    }
+    @include respond(big-desktop) {
+    }
+  }
+
+  &__img-box {
+    background-image: linear-gradient(
+      to left top,
+      #a21caf,
+      #603196,
+      #2b2e70,
+      #102243,
+      #0c1016
+    );
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+
+    @include respond(phone) {
+      background-image: linear-gradient(
+        to right bottom,
+        #a21caf,
+        #603196,
+        #2b2e70,
+        #102243,
+        #0c1016
+      );
+      clip-path: none;
+      height: 40vh;
+    }
+  }
+  &__img {
+    width: 100%;
+    opacity: 95%;
+    transform: scale(1.03);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    animation: fadding 1s ease-out 750ms;
+    animation-fill-mode: backwards;
+
+    @include respond(phone) {
+      height: 100%;
+      object-fit: cover;
+      clip-path: polygon(0 14%, 100% 0, 100% 82%, 0% 100%);
+    }
+  }
+
+  &__text-box {
+    position: relative;
+    padding: 4rem;
+    background-image: linear-gradient(
+      to left top,
+
+      #720c5a 0%,
+      #530f39,
+      #330f20,
+      #250d17,
+      #18070d,
+      $black-dark,
+      $black-dark,
+      $black-dark,
+      $black-dark,
+      $black-dark
+    );
+  }
+  &__location {
+    font-size: 1.8rem;
+    color: $color-white-3;
+    font-weight: 300;
+    margin-right: 1rem;
+    position: relative;
+    @include respond(phone) {
+      margin-right: 0;
+      margin-left: 1rem;
+    }
+  }
+  &__social {
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+
+    &-link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-primary-lightest-shade-2;
+        transition: all 200ms;
+        &:first-child {
+          margin-left: auto;
+        }
+        @include respond(phone) {
+          &:last-child {
+            margin-right: auto;
+          }
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      &:hover,
+      &:active {
+        color: $color-primary-lightest;
+      }
+    }
+  }
+
+  &__calender {
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 30rem;
+    gap: 1rem;
+    @include respond(phone) {
+      right: 0;
+      left: 20rem;
+    }
+    &-icon {
+      font-size: 4.5rem;
+    }
+  }
+  &__date-time {
+    font-size: 1.5rem;
+    color: $color-white-2;
+    text-align: left;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+}

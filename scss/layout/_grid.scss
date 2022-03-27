@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  column-gap: $gutter-vertical;
+  row-gap: $gutter-horizontal;
+  margin: 0 auto;
+}
+.container {
+  width: $grid-width;
+  margin: 0 auto;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-webinar {
+  grid-template-columns: 1.5fr 2fr;
+  @include respond(phone) {
+    grid-template-rows: 1.5fr 2fr;
+    grid-template-columns: 1fr;
+  }
+}
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-1-2-cols {
+  grid-template-columns: 1fr 2fr;
+}
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-1-1-2-cols {
+  grid-template-columns: 1fr 1fr 2fr;
+}
+.grid-1-3-cols {
+  grid-template-columns: 1fr 3fr;
+}

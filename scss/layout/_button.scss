@@ -1,0 +1,27 @@
+.anchor_btn:link,
+.anchor_btn:visited {
+  text-decoration: none;
+  color: $color-white-2;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+.btn {
+  padding: 1rem 3rem;
+  background-color: $color-primary-shade-1light;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 300ms;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 1rem 1.6rem 1.6rem rgba($black-dark, 0.8);
+    background-color: $color-primary;
+  }
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0.5rem 0.8rem 0.8rem rgba($black-dark, 0.8);
+    background-color: $color-primary;
+  }
+}

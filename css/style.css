@@ -166,7 +166,7 @@ body {
   width: 68ch; }
   @media (max-width: 37.5em) {
     .para-primary {
-      width: 60ch; } }
+      width: 57ch; } }
 
 .text-align {
   text-align: right; }
@@ -456,6 +456,9 @@ body {
     font-family: inherit;
     font-size: 1.8rem;
     color: #a5a9af; }
+    @media (max-width: 37.5em) {
+      .form__input::placeholder {
+        color: #090a0b; } }
   .form__input::-webkit-input-placeholder {
     color: #a5a9af; }
   .form__input:focus {

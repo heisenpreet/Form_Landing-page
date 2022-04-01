@@ -37,6 +37,10 @@
       font-family: inherit;
       font-size: 1.8rem;
       color: $color-grey-text;
+
+      @include respond(phone) {
+        color: $black-dark;
+      }
     }
 
     &::-webkit-input-placeholder {

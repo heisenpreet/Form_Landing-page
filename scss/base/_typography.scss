@@ -41,7 +41,7 @@ body {
   color: $color-grey-text;
   width: 68ch;
   @include respond(phone) {
-    width: 60ch;
+    width: 57ch;
   }
 }
 .text-align {

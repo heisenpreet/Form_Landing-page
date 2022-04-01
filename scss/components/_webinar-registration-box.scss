@@ -158,7 +158,7 @@
     visibility: hidden;
 
     @include respond(phone) {
-      top: 40rem;
+      top: 42%;
       bottom: auto;
       right: auto;
       left: -90rem;

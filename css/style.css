@@ -377,7 +377,7 @@ body {
     visibility: hidden; }
     @media (max-width: 37.5em) {
       .webinar__form {
-        top: 40rem;
+        top: 42%;
         bottom: auto;
         right: auto;
         left: -90rem; } }

@@ -22,7 +22,7 @@
     <title>Webinar-ICLabs</title>
   </head>
   <body>
-    <section class="webinar">
+    <section class="webinar ">
       <div class="webinar__box-1 grid grid-webinar">
         <div class="webinar__img-box">
           <img
@@ -62,20 +62,21 @@
               </span>
             </h2>
 
-            <form action="#" class="form">
+            <form action="#" id="form-webinar" class="form">
               <div class="form__group">
                 <input
                   type="text"
                   class="form__input"
                   placeholder="Full Name"
-                  required
                   id="fullname"
+                  required
                 />
                 <label for="fullname" class="form__label">Full Name</label>
               </div>
 
-              <div class="form__group">
+              <div  class="form__group">
                 <input
+                
                   type="email"
                   class="form__input"
                   placeholder="Email address"
@@ -84,13 +85,18 @@
                 />
                 <label for="email" class="form__label">Email address</label>
               </div>
+
+              <button class="form__btn " type="submit">
+                submit
+              </button>
             </form>
           </div>
 
           <a
             href="#"
             class="webinar__register anchor_btn btn u-margin-top-medium"
-            >Register</a
+            ><span class="webinar__btn-register">Register</span
+            ><span class="webinar__btn-submit">submit</span></a
           >
           <div class="webinar__location u-margin-top-smallest">
             <span
@@ -142,6 +148,21 @@
             ></a>
           </div>
         </header>
+      </div>
+      <div class="popup ">
+        <header class="webinar__text-box text-align">
+          <h1 class="heading-primary webinar__heading">
+            <span class="heading-primary--top"
+              >Thank You <span id="entered-name"></span>, <br>Looking forward to meet you.</span
+            >
+            <p class="para-primary u-margin-top-big">
+       <blockquote class="blockquote">
+        “You can not cross the sea merely by standing and staring at the water.”<br>
+        ― Rabindranath Tagore
+       </blockquote>
+        
+            </p>
+          </h1>
       </div>
     </section>
     <script src="script.js"></script>

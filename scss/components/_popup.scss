@@ -1,0 +1,35 @@
+.popup {
+  @include absolute-center;
+  box-shadow: $black-shadow-normal;
+  background-color: $black-light;
+  width: 1rem;
+  height: 1rem;
+  overflow: hidden;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 500ms;
+
+  @include respond(tab-land) {
+  }
+  @include respond(tab-port) {
+  }
+  @include respond(phone) {
+    height: 95vh;
+    width: 95vw;
+  }
+  @include respond(big-desktop) {
+  }
+
+  &__visible {
+    opacity: 1;
+    visibility: visible;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  &__blur {
+    opacity: 15%;
+    filter: grayscale(100%);
+  }
+}

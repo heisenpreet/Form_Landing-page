@@ -94,3 +94,19 @@ FADE IN OUT ANIMATION ,*KEY FRAMES* IMPORTANT
     transform: translate(0deg);
   }
 }
+
+@keyframes shake {
+  25% {
+    transform: translateX(4px);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+input:required {
+  animation: shake 300ms;
+}

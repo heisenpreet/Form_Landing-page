@@ -155,16 +155,54 @@
     opacity: 0;
     z-index: 10;
     visibility: hidden;
+
+    @include respond(phone) {
+      top: 78rem;
+      bottom: auto;
+      right: auto;
+      left: -90rem;
+    }
   }
+
   .slide {
     transform: translateX(60rem);
     opacity: 1;
     visibility: visible;
+    @include respond(phone) {
+      transform: translateX(90rem);
+    }
   }
 
   &__heading {
     position: relative;
     transition: all 900ms;
+  }
+
+  &__register {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__btn-register {
+    display: inline-block;
+    transition: all 500ms;
+  }
+
+  &__btn-submit {
+    display: inline-block;
+    position: absolute;
+    top: -80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    transition: all 500ms;
+    z-index: 0;
+  }
+  &__btn-slide &__btn-submit {
+    top: 50%;
+  }
+  &__btn-slide &__btn-register {
+    transform: translateY(150%);
   }
 }
 .slide-left1,

@@ -53,3 +53,15 @@ body {
   @include respond(big-desktop) {
   }
 }
+.blockquote {
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $color-white-2;
+  font-style: italic;
+  text-align: center;
+}
+#entered-name {
+  text-transform: capitalize;
+  color: $color-primary;
+}

@@ -30,7 +30,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 30%; } }
+      font-size: 40%; } }
   @media (mix-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -164,6 +164,9 @@ body {
   font-weight: 300;
   color: #a5a9af;
   width: 68ch; }
+  @media (max-width: 37.5em) {
+    .para-primary {
+      width: 60ch; } }
 
 .text-align {
   text-align: right; }
@@ -291,12 +294,13 @@ body {
     overflow: hidden; }
     @media (max-width: 37.5em) {
       .webinar__box-1 {
-        height: 95vh;
+        height: fit-content;
         width: 95vw; } }
   .webinar__img-box {
     z-index: 90;
     background-image: linear-gradient(to left top, #a21caf, #603196, #2b2e70, #102243, #0c1016);
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%); }
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    overflow: hidden; }
     @media (max-width: 37.5em) {
       .webinar__img-box {
         background-image: linear-gradient(to right bottom, #a21caf, #603196, #2b2e70, #102243, #0c1016);
@@ -373,7 +377,7 @@ body {
     visibility: hidden; }
     @media (max-width: 37.5em) {
       .webinar__form {
-        top: 78rem;
+        top: 40rem;
         bottom: auto;
         right: auto;
         left: -90rem; } }
@@ -439,7 +443,7 @@ body {
   border-bottom: 4px solid #c777cf; }
   @media (max-width: 37.5em) {
     .form__input {
-      width: 50rem;
+      width: 42rem;
       order: 1; } }
   .form__input::placeholder {
     font-weight: 300;
@@ -486,8 +490,7 @@ body {
   transition: all 300ms; }
   @media (max-width: 37.5em) {
     .form__btn {
-      margin-top: 0;
-      transform: translateY(0.8rem); } }
+      transform: translateY(-5.2rem); } }
 
 .popup {
   position: absolute;

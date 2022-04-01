@@ -40,6 +40,9 @@ body {
   font-weight: 300;
   color: $color-grey-text;
   width: 68ch;
+  @include respond(phone) {
+    width: 60ch;
+  }
 }
 .text-align {
   text-align: right;

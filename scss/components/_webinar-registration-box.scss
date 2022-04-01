@@ -5,7 +5,9 @@
 
   padding: 3rem;
   position: relative;
-
+  @include respond(phone) {
+    padding: 1rem;
+  }
   &__box-1 {
     @include absolute-center;
     box-shadow: $black-shadow-normal;
@@ -19,7 +21,7 @@
     }
     @include respond(phone) {
       height: fit-content;
-      width: 95vw;
+      width: 100vw;
     }
     @include respond(big-desktop) {
     }

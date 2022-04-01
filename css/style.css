@@ -30,7 +30,7 @@ html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
     html {
-      font-size: 40%; } }
+      font-size: 43%; } }
   @media (mix-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -282,6 +282,9 @@ body {
   background-color: #2d3239;
   padding: 3rem;
   position: relative; }
+  @media (max-width: 37.5em) {
+    .webinar {
+      padding: 1rem; } }
   .webinar__box-1 {
     position: absolute;
     top: 50%;
@@ -295,7 +298,7 @@ body {
     @media (max-width: 37.5em) {
       .webinar__box-1 {
         height: fit-content;
-        width: 95vw; } }
+        width: 100vw; } }
   .webinar__img-box {
     z-index: 90;
     background-image: linear-gradient(to left top, #a21caf, #603196, #2b2e70, #102243, #0c1016);

@@ -1,3 +1,6 @@
+The CSS file of this project is prefixed and compressed and was written using SCSS 
+
+
 "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "compile:sass": "node-sass sass/main.scss css/style-comp.css",
     "concat:css": "concat -o css/style-concat.css css/icon-font.css css/style-comp.css",
@@ -6,4 +9,4 @@
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
 
 
-    all the files needed for css build , copy paste json
+    all the files needed for css build , 
